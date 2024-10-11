@@ -159,7 +159,7 @@ export default function Generator(props) {
 
     return (
         <SectionWrapper id={'generate'} header={"generate your workout"} title={['It\'s', 'Huge', 'o\'clock']}>
-            <Header index={'01'} title={'Pick your poison'} description={"Select the workout you wish to endure."} />
+            <Header index={'01'} title={'Pick your package'} description={"Select the workout you wish to endure."} />
             <div className='grid grid-cols-2 sm:grid-cols-4 gap-4'>
                 {Object.keys(WORKOUTS).map((type, typeIndex) => {
                     return (
@@ -172,7 +172,7 @@ export default function Generator(props) {
                     )
                 })}
             </div>
-            <Header index={'02'} title={'Lock on targets'} description={"Select the muscles judged for annihilation."} />
+            <Header index={'02'} title={'Lock on targets'} description={"Select the muscles group."} />
             <div className='bg-slate-950  border border-solid border-blue-400 rounded-lg flex flex-col'>
                 <button onClick={toggleModal} className='relative p-3 flex items-center justify-center'>
                     <p className='capitalize'>{muscles.length == 0 ? 'Select muscle groups' : muscles.join(' ')}</p>
@@ -192,7 +192,7 @@ export default function Generator(props) {
                     </div>
                 )}
             </div>
-            <Header index={'03'} title={'Become Juggernaut'} description={"Select your ultimate objective."} />
+            <Header index={'03'} title={'Become Extra Fit'} description={"Select your ultimate objective."} />
             <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
                 {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
                     return (
